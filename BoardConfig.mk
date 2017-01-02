@@ -19,7 +19,6 @@ TARGET_BOOTLOADER_BOARD_NAME := F8331
 BOARD_KERNEL_CMDLINE += androidboot.hardware=kagura
 
 #Reserve space for data encryption (23857201152-16384)
-BOARD_SYSTEMIMAGE_PARTITION_SIZE := 6197084160
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 23857184768
 
 #TARGET_TAP_TO_WAKE_NODE := "/sys/devices/virtual/input/clearpad/wakeup_gesture"
