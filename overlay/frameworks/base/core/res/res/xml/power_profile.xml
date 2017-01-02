@@ -22,6 +22,10 @@
         <value>4.20</value>
         <value>4.20</value>
     </array>
+    <item name="modem.controller.idle">0.12</item>
+    <item name="modem.controller.rx">163.8</item>
+    <item name="modem.controller.tx">87.9</item>
+    <item name="modem.controller.voltage">0.72</item>
     <array name="cpu.speeds.cluster0">
         <value>307200</value>
         <value>422400</value>
@@ -119,6 +123,11 @@
     </array>
     <item name="cpu.awake">46.45</item>
     <item name="battery.capacity">2900</item>
+    <item name="wifi.controller.idle">3</item>
+    <item name="wifi.controller.rx">185</item>
+    <item name="wifi.controller.tx">390</item>
+    <array name="wifi.controller.tx_levels" />
+    <item name="wifi.controller.voltage">3600</item>
     <array name="wifi.batchedscan">
         <value>.0002</value>
         <value>.002</value>
@@ -126,4 +135,8 @@
         <value>.2</value>
         <value>2</value>
     </array>
+    <item name="bluetooth.controller.idle">1</item>
+    <item name="bluetooth.controller.rx">25</item>
+    <item name="bluetooth.controller.tx">25</item>
+    <item name="bluetooth.controller.voltage">3600</item>
 </device>
