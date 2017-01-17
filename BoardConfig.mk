@@ -16,6 +16,8 @@ include device/sony/tone/PlatformConfig.mk
 
 TARGET_BOOTLOADER_BOARD_NAME := F8331
 
+WIFI_BUS := PCIE
+
 BOARD_KERNEL_CMDLINE += androidboot.hardware=kagura
 
 #Reserve space for data encryption (23857201152-16384)
