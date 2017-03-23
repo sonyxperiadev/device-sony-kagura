@@ -26,7 +26,7 @@
   <CameraModuleConfig>
     <CameraId>1</CameraId>
     <SensorName>imx214</SensorName>
-    <ActuatorName>lc898217</ActuatorName>
+    <ActuatorName>lc898217xc</ActuatorName>
     <ChromatixName>imx214_chromatix</ChromatixName>
     <ModesSupported>1</ModesSupported>
     <Position>FRONT</Position>
