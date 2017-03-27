@@ -24,7 +24,7 @@
     </LensInfo>
   </CameraModuleConfig>
   <CameraModuleConfig>
-    <CameraId>1</CameraId>
+    <CameraId>2</CameraId>
     <SensorName>imx214</SensorName>
     <ActuatorName>lc898217xc</ActuatorName>
     <ChromatixName>imx214_chromatix</ChromatixName>
