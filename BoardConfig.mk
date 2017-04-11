@@ -18,6 +18,9 @@ TARGET_BOOTLOADER_BOARD_NAME := F8331
 
 WIFI_BUS := PCIE
 
+# NFC
+NXP_CHIP_TYPE := PN547C2
+
 BOARD_KERNEL_CMDLINE += androidboot.hardware=kagura
 
 #Reserve space for data encryption (23857201152-16384)
