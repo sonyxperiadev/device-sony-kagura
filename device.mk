@@ -84,3 +84,6 @@ $(call inherit-product, vendor/sony/tone-kagura/kagura-vendor.mk)
 
 # copy wlan firmware
 $(call inherit-product-if-exists, vendor/broadcom/wlan/bcmdhd/firmware/bcm4359/device-bcm.mk)
+
+# copy NFC firmware
+$(call inherit-product-if-exists, vendor/nxp/nxp-vendor.mk)
