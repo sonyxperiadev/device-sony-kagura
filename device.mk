@@ -87,3 +87,6 @@ $(call inherit-product-if-exists, vendor/broadcom/wlan/bcmdhd/firmware/bcm4359/d
 
 # copy NFC firmware
 $(call inherit-product-if-exists, vendor/nxp/nxp-vendor.mk)
+
+# include optional vendor configuration
+$(call inherit-product-if-exists, vendor/qcom/proprietary/common/build/qcom-packages.mk)
