@@ -80,13 +80,15 @@ PRODUCT_PROPERTY_OVERRIDES := \
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, device/sony/tone/platform.mk)
-$(call inherit-product, vendor/sony/tone-kagura/kagura-vendor.mk)
 
 # copy wlan firmware
 $(call inherit-product-if-exists, vendor/broadcom/wlan/bcmdhd/firmware/bcm4359/device-bcm.mk)
 
 # copy NFC firmware
 $(call inherit-product-if-exists, vendor/nxp/nxp-vendor.mk)
+
+# include board vendor blobs
+$(call inherit-product, vendor/sony/tone-common/tone-partial.mk)
 
 # include optional vendor configuration
 $(call inherit-product-if-exists, vendor/qcom/proprietary/common/build/qcom-packages.mk)
