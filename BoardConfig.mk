@@ -20,6 +20,7 @@ WIFI_BUS := PCIE
 
 # NFC
 NXP_CHIP_TYPE := PN547C2
+NXP_CHIP_FW_TYPE := PN547C2
 
 BOARD_KERNEL_CMDLINE += androidboot.hardware=kagura
 
