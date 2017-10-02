@@ -19,7 +19,7 @@ $(call inherit-product, device/sony/kagura/aosp_f8331.mk)
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.multisim.config=dsds \
     persist.radio.multisim.config=dsds \
-    ro.telephony.default_network=9,1
+    ro.telephony.default_network=9,0
 
 PRODUCT_NAME := aosp_f8332
 PRODUCT_DEVICE := kagura
