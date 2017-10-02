@@ -80,14 +80,15 @@
     <!-- cluster 1 clocks -->
     <control name="cluster-1-clk">
         <mitigation level="off"><value resource="cluster-1-max-clk">2:4294967295</value></mitigation>
-        <mitigation level="1"><value resource="cluster-1-max-clk">2:1478400</value></mitigation>
-        <mitigation level="2"><value resource="cluster-1-max-clk">2:1324800</value></mitigation>
-        <mitigation level="3"><value resource="cluster-1-max-clk">2:1113600</value></mitigation>
-        <mitigation level="4"><value resource="cluster-1-max-clk">2:1036800</value></mitigation>
-        <mitigation level="5"><value resource="cluster-1-max-clk">2:883200</value></mitigation>
-        <mitigation level="6"><value resource="cluster-1-max-clk">2:729600</value></mitigation>
-        <mitigation level="7"><value resource="cluster-1-max-clk">2:403200</value></mitigation>
-        <mitigation level="8"><value resource="cluster-1-max-clk">2:307200</value></mitigation>
+        <mitigation level="1"><value resource="cluster-1-max-clk">2:1824000</value></mitigation>
+        <mitigation level="2"><value resource="cluster-1-max-clk">2:1478400</value></mitigation>
+        <mitigation level="3"><value resource="cluster-1-max-clk">2:1324800</value></mitigation>
+        <mitigation level="4"><value resource="cluster-1-max-clk">2:1113600</value></mitigation>
+        <mitigation level="5"><value resource="cluster-1-max-clk">2:1036800</value></mitigation>
+        <mitigation level="6"><value resource="cluster-1-max-clk">2:883200</value></mitigation>
+        <mitigation level="7"><value resource="cluster-1-max-clk">2:729600</value></mitigation>
+        <mitigation level="8"><value resource="cluster-1-max-clk">2:403200</value></mitigation>
+        <mitigation level="9"><value resource="cluster-1-max-clk">2:307200</value></mitigation>
     </control>
 
     <!-- adreno clocks -->
@@ -118,61 +119,61 @@
         </threshold>
         <threshold trigger="45000" clear="42000">
             <mitigation name="cluster-0-clk" level="off" />
-            <mitigation name="cluster-1-clk" level="off" />
-            <mitigation name="charging" level="1" />
+            <mitigation name="cluster-1-clk" level="1" />
             <mitigation name="adreno-clk" level="off" />
+            <mitigation name="charging" level="1" />
         </threshold>
         <threshold trigger="47700" clear="45000">
             <mitigation name="cluster-0-clk" level="1" />
-            <mitigation name="cluster-1-clk" level="1" />
+            <mitigation name="cluster-1-clk" level="2" />
             <mitigation name="adreno-clk" level="off" />
             <mitigation name="charging" level="1" />
         </threshold>
         <threshold trigger="48900" clear="47700">
             <mitigation name="cluster-0-clk" level="2" />
-            <mitigation name="cluster-1-clk" level="2" />
+            <mitigation name="cluster-1-clk" level="3" />
             <mitigation name="adreno-clk" level="off" />
             <mitigation name="charging" level="2" />
         </threshold>
         <threshold trigger="50200" clear="48900">
             <mitigation name="cluster-0-clk" level="3" />
-            <mitigation name="cluster-1-clk" level="3" />
+            <mitigation name="cluster-1-clk" level="4" />
             <mitigation name="adreno-clk" level="off" />
             <mitigation name="charging" level="3" />
         </threshold>
         <threshold trigger="51400" clear="50200">
             <mitigation name="cluster-0-clk" level="4" />
-            <mitigation name="cluster-1-clk" level="4" />
+            <mitigation name="cluster-1-clk" level="5" />
             <mitigation name="adreno-clk" level="off" />
             <mitigation name="charging" level="4" />
         </threshold>
         <threshold trigger="52500" clear="51400">
             <mitigation name="cluster-0-clk" level="5" />
-            <mitigation name="cluster-1-clk" level="5" />
+            <mitigation name="cluster-1-clk" level="6" />
             <mitigation name="adreno-clk" level="off" />
             <mitigation name="charging" level="5" />
         </threshold>
         <threshold trigger="53500" clear="52500">
             <mitigation name="cluster-0-clk" level="6" />
-            <mitigation name="cluster-1-clk" level="6" />
+            <mitigation name="cluster-1-clk" level="7" />
             <mitigation name="adreno-clk" level="off" />
             <mitigation name="charging" level="5" />
         </threshold>
         <threshold trigger="54700" clear="53500">
             <mitigation name="cluster-0-clk" level="7" />
-            <mitigation name="cluster-1-clk" level="7" />
+            <mitigation name="cluster-1-clk" level="8" />
             <mitigation name="adreno-clk" level="off" />
             <mitigation name="charging" level="6" />
         </threshold>
         <threshold trigger="55700" clear="54700">
             <mitigation name="cluster-0-clk" level="8" />
-            <mitigation name="cluster-1-clk" level="8" />
+            <mitigation name="cluster-1-clk" level="9" />
             <mitigation name="adreno-clk" level="1" />
             <mitigation name="charging" level="6" />
         </threshold>
         <threshold trigger="63000" clear="60000">
             <mitigation name="cluster-0-clk" level="8" />
-            <mitigation name="cluster-1-clk" level="8" />
+            <mitigation name="cluster-1-clk" level="9" />
             <mitigation name="adreno-clk" level="1" />
             <mitigation name="charging" level="7" />
         </threshold>
