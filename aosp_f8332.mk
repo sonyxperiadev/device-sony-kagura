@@ -22,7 +22,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.telephony.default_network=9,0
 
 PRODUCT_NAME := aosp_f8332
-PRODUCT_DEVICE := kagura
+PRODUCT_DEVICE := kagura_dsds
 PRODUCT_MODEL := Xperia XZ Dual (AOSP)
 PRODUCT_BRAND := Sony
 PRODUCT_MANUFACTURER := Sony
