@@ -132,6 +132,25 @@
         <mitigation level="7"><value resource="charge_speed">13</value></mitigation>
     </control>
 
+    <!-- charging -->
+    <configuration sensor="pm8994_tz">
+        <threshold>
+            <mitigation name="charging" level="off" />
+        </threshold>
+        <threshold trigger="50500" clear="49500">
+            <mitigation name="charging" level="5" />
+        </threshold>
+        <threshold trigger="51500" clear="50500">
+            <mitigation name="charging" level="8" />
+        </threshold>
+        <threshold trigger="52500" clear="51500">
+            <mitigation name="charging" level="11" />
+        </threshold>
+        <threshold trigger="53300" clear="52300">
+            <mitigation name="charging" level="13" />
+        </threshold>
+    </configuration>
+
     <!-- CPU temperature protection - Values in deci-centigrade -->
     <configuration sensor="cluster-0-temp">
         <threshold>
