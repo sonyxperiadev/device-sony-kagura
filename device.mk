@@ -66,6 +66,7 @@ PRODUCT_COPY_FILES += \
 
 # Device Init
 PRODUCT_PACKAGES += \
+    fstab.kagura \
     init.recovery.kagura \
     init.kagura \
     ueventd.kagura
