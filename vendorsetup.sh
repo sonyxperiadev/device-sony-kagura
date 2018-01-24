@@ -14,5 +14,7 @@
 # limitations under the License.
 #
 
+add_lunch_combo aosp_f8331-eng
 add_lunch_combo aosp_f8331-userdebug
+add_lunch_combo aosp_f8332-eng
 add_lunch_combo aosp_f8332-userdebug
