@@ -68,8 +68,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     fstab.kagura \
     init.recovery.kagura \
-    init.kagura \
-    ueventd.kagura
+    init.kagura
 
 # Lights
 PRODUCT_PACKAGES += \
