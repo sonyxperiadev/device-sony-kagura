@@ -70,10 +70,6 @@ PRODUCT_PACKAGES += \
     init.recovery.kagura \
     init.kagura
 
-# Lights
-PRODUCT_PACKAGES += \
-    lights.kagura
-
 # Simple PowerHAL
 PRODUCT_PACKAGES += \
     power.kagura
