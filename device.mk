@@ -74,10 +74,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     power.kagura
 
-# Fingerprint HAL
-PRODUCT_PACKAGES += \
-    fingerprint.kagura
-
 # NFC config
 PRODUCT_PACKAGES += \
     nfc_nci.kagura
