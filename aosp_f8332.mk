@@ -12,14 +12,16 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+# Inherit from those products. Most specific first.
+$(call inherit-product, device/sony/kagura/aosp_f8331.mk)
+
 # DualSim
+BOARD_IS_DSDS := true
+
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.multisim.config=dsds \
     persist.radio.multisim.config=dsds \
     ro.telephony.default_network=9,1
-
-# Inherit from those products. Most specific first.
-$(call inherit-product, device/sony/kagura/aosp_f8331.mk)
 
 PRODUCT_NAME := aosp_f8332
 PRODUCT_DEVICE := kagura
