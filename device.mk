@@ -79,10 +79,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     power.kagura
 
-# NFC config
-PRODUCT_PACKAGES += \
-    nfc_nci.kagura
-
 # Telephony Packages (AOSP)
 PRODUCT_PACKAGES += \
     InCallUI \
