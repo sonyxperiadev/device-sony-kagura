@@ -14,16 +14,6 @@
 
 include device/sony/tone/PlatformConfig.mk
 
-TARGET_BOOTLOADER_BOARD_NAME := unknown
-ifneq (,$(filter %f8331,$(TARGET_PRODUCT)))
-TARGET_BOOTLOADER_BOARD_NAME := F8331
-else ifneq (,$(filter %f8332,$(TARGET_PRODUCT)))
-TARGET_BOOTLOADER_BOARD_NAME := F8332
-else
-TARGET_BOOTLOADER_BOARD_NAME := F8331
-$(warning Unrecognized value for TARGET_PRODUCT: "$(TARGET_PRODUCT)", using default value: "$(TARGET_BOOTLOADER_BOARD_NAME)")
-endif
-
 # Platform
 PRODUCT_PLATFORM := tone
 
@@ -35,13 +25,26 @@ NXP_CHIP_FW_TYPE := PN547C2
 
 BOARD_KERNEL_CMDLINE += androidboot.hardware=kagura
 
+TARGET_USES_CASH_EXTENSION := true
+
 # Partition information
 BOARD_FLASH_BLOCK_SIZE := 131072 # (BOARD_KERNEL_PAGESIZE * 64)
 BOARD_CACHEIMAGE_PARTITION_SIZE := 268435456
 BOARD_SYSTEMIMAGE_PARTITION_SIZE := 6197084160
+
 # Reserve space for data encryption (23857201152-16384)
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 23857184768
 
-TARGET_USES_CASH_EXTENSION := true
+TARGET_BOOTLOADER_BOARD_NAME := unknown
+ifneq (,$(filter %f8331,$(TARGET_PRODUCT)))
+TARGET_BOOTLOADER_BOARD_NAME := F8331
+else ifneq (,$(filter %f8332,$(TARGET_PRODUCT)))
+TARGET_BOOTLOADER_BOARD_NAME := F8332
+# Reserve space for data encryption (55125737472-16384)
+BOARD_USERDATAIMAGE_PARTITION_SIZE := 55125721088
+else
+TARGET_BOOTLOADER_BOARD_NAME := F8331
+$(warning Unrecognized value for TARGET_PRODUCT: "$(TARGET_PRODUCT)", using default value: "$(TARGET_BOOTLOADER_BOARD_NAME)")
+endif
 
 #TARGET_TAP_TO_WAKE_NODE := "/sys/devices/virtual/input/clearpad/wakeup_gesture"
