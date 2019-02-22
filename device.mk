@@ -74,10 +74,6 @@ PRODUCT_PACKAGES += \
     init.recovery.kagura \
     init.kagura
 
-# Simple PowerHAL
-PRODUCT_PACKAGES += \
-    power.kagura
-
 # Telephony Packages (AOSP)
 PRODUCT_PACKAGES += \
     InCallUI \
