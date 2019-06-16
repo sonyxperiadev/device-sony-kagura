@@ -56,6 +56,9 @@ PRODUCT_COPY_FILES += \
 # Focus calibration
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/vendor/etc/tof_focus_calibration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/tof_focus_calibration.xml
+# RGBC-IR calibration
+PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/vendor/etc/cash_expcol_calibration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cash_expcol_calibration.xml
 
 # NFC Configuration
 PRODUCT_COPY_FILES += \
