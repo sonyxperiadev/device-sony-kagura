@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- RGBC-IR calibration file for Xperia XZ -->
+<!-- TCS3490 sensor -->
+<!-- Values compiled by Daniel Aniq -->
+<cash_expcol_calibration>
+    <clear_iso>
+        <rgbc_clear_iso_exptime
+               clear_values="1 16 32 53 83 150 500 1000 2500 3500 4500 6500 8000"
+               iso_values="3200 800 640 250 200 125 100 80 50 40 40 40 40"
+               exposure_times="62500000 40000000 31250000 20000000 10000000 8000000 5000000 4000000 2000000 1562500 1250000 625000 625000"/>
+        <rgbc_clear_limits min_range="1" max_range="8000"/>
+    </clear_iso>
+</cash_expcol_calibration>
