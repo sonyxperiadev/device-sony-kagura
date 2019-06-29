@@ -15,8 +15,6 @@
 # Device path
 DEVICE_PATH := device/sony/kagura/rootdir
 
-WIFI_DRIVER_BUILT := brcmfmac
-
 DEVICE_PACKAGE_OVERLAYS += \
     device/sony/kagura/overlay
 
@@ -60,10 +58,6 @@ PRODUCT_COPY_FILES += \
 # NFC Configuration
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/vendor/etc/libnfc-nxp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp.conf
-
-# BT FW patch
-PRODUCT_COPY_FILES += \
-    $(DEVICE_PATH)/vendor/firmware/BCM4359C0.hcd:$(TARGET_COPY_OUT_VENDOR)/firmware/BCM4359C0.hcd
 
 # WIFI FW patch
 PRODUCT_COPY_FILES += \
