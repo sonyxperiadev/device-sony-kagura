@@ -15,3 +15,9 @@
 PRODUCT_MAKEFILES := $(LOCAL_DIR)/aosp_f8331.mk \
                      $(LOCAL_DIR)/aosp_f8332.mk
 
+COMMON_LUNCH_CHOICES += \
+    aosp_f8331-eng \
+    aosp_f8331-userdebug \
+    aosp_f8332-eng \
+    aosp_f8332-userdebug
+
